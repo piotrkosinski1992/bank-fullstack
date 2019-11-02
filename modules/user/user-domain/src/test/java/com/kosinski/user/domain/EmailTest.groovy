@@ -1,4 +1,4 @@
-package com.kosinski.domain
+package com.kosinski.user.domain
 
 import spock.lang.Specification
 

@@ -1,19 +1,24 @@
 package com.kosinski.transaction.domain;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "ACCOUNT_TRANSACTION")
 public class Transaction {
 
+    @EmbeddedId
     private TransactionId id;
+    @Column(name = "TRANSACTION_DATE")
     private LocalDateTime timestamp = LocalDateTime.now();
     private Currency currency;
     private BigInteger amount;
     private TransactionType type;
     private TransactionMethod method;
+    @Column(name="T_FROM")
     private Integer from;
+    @Column(name="T_TO")
     private Integer to;
     private BigInteger balance;
     private String username;
@@ -91,5 +96,9 @@ public class Transaction {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public TransactionId getId() {
+        return id;
     }
 }

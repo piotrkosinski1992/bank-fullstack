@@ -1,7 +1,8 @@
 package com.kosinski.web;
 
-import com.kosinski.domain.User;
-import com.kosinski.usecase.LoadUsers;
+
+import com.kosinski.user.domain.User;
+import com.kosinski.user.usecase.LoadUsers;
 import com.kosinski.web.dto.UserMapper;
 import com.kosinski.web.dto.UserQueryDTO;
 import org.springframework.web.bind.annotation.GetMapping;

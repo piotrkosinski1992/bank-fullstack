@@ -1,10 +1,10 @@
 package com.kosinski;
 
-import com.kosinski.domain.Email;
-import com.kosinski.domain.Role;
-import com.kosinski.domain.User;
-import com.kosinski.gateway.BaseEntityRepository;
-import com.kosinski.gateway.UserRepository;
+import com.kosinski.user.domain.Email;
+import com.kosinski.user.domain.Role;
+import com.kosinski.user.domain.User;
+import com.kosinski.user.gateway.BaseEntityRepository;
+import com.kosinski.user.gateway.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -2,7 +2,7 @@ package com.kosinski.auth;
 
 import com.kosinski.auth.jwt.JwtAuthenticationFilter;
 import com.kosinski.auth.jwt.JwtAuthorizationFilter;
-import com.kosinski.usecase.LoadBaseEntity;
+import com.kosinski.user.usecase.LoadBaseEntity;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

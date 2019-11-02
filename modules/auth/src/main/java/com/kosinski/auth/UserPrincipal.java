@@ -1,6 +1,6 @@
 package com.kosinski.auth;
 
-import com.kosinski.domain.BaseEntity;
+import com.kosinski.user.domain.BaseEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-gateway" />
-        <module name="user-web" />
         <module name="spring-app" />
-        <module name="user-usecase" />
-        <module name="auth" />
-        <module name="account" />
-        <module name="transaction-gateway" />
-        <module name="transaction-usecase" />
-        <module name="user-domain" />
         <module name="transaction-domain" />
+        <module name="transaction-usecase" />
+        <module name="user-web" />
+        <module name="auth" />
+        <module name="user-usecase" />
+        <module name="account" />
+        <module name="user-domain" />
+        <module name="transaction-gateway" />
+        <module name="user-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

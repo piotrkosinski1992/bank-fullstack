@@ -1,8 +1,8 @@
 package com.kosinski.user.gateway;
 
-import com.kosinski.domain.User;
-import com.kosinski.usecase.gateways.UsersCommandGateway;
-import com.kosinski.usecase.gateways.UsersQueryGateway;
+import com.kosinski.user.domain.User;
+import com.kosinski.user.usecase.gateways.UsersCommandGateway;
+import com.kosinski.user.usecase.gateways.UsersQueryGateway;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

@@ -1,8 +1,8 @@
 package com.kosinski.web.dto;
 
-import com.kosinski.domain.Email;
-import com.kosinski.domain.Role;
-import com.kosinski.domain.User;
+import com.kosinski.user.domain.Email;
+import com.kosinski.user.domain.Role;
+import com.kosinski.user.domain.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

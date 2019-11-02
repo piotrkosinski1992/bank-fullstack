@@ -3,7 +3,7 @@ package com.kosinski.auth.jwt;
 import com.auth0.jwt.JWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kosinski.auth.UserPrincipal;
-import com.kosinski.domain.BaseEntity;
+import com.kosinski.user.domain.BaseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

@@ -8,5 +8,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.1.6.RELEASE" level="project" />
+    <orderEntry type="module" module-name="user-domain" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.10.RELEASE" level="project" />
+    <orderEntry type="module" module-name="user-usecase" />
   </component>
 </module>

@@ -1,7 +1,7 @@
 package com.kosinski.auth;
 
-import com.kosinski.domain.BaseEntity;
-import com.kosinski.usecase.LoadBaseEntity;
+import com.kosinski.user.domain.BaseEntity;
+import com.kosinski.user.usecase.LoadBaseEntity;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

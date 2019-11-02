@@ -1,9 +1,8 @@
 package com.kosinski.transaction.gateway;
 
-import com.kosinski.domain.Transaction;
-import com.kosinski.gateway.TransactionRepository;
-import com.kosinski.usecase.gateway.TransactionCommandGateway;
-import com.kosinski.usecase.gateway.TransactionQueryGateway;
+import com.kosinski.transaction.domain.Transaction;
+import com.kosinski.transaction.usecase.gateway.TransactionCommandGateway;
+import com.kosinski.transaction.usecase.gateway.TransactionQueryGateway;
 import org.springframework.stereotype.Service;
 
 @Service

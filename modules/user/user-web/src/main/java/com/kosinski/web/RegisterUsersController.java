@@ -1,6 +1,6 @@
 package com.kosinski.web;
 
-import com.kosinski.usecase.RegisterUsers;
+import com.kosinski.user.usecase.RegisterUsers;
 import com.kosinski.web.dto.UserCommandDTO;
 import com.kosinski.web.dto.UserMapper;
 import org.springframework.web.bind.annotation.PostMapping;
