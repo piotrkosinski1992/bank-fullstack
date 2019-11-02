@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user-gateway" />
+        <module name="user-web" />
+        <module name="spring-app" />
+        <module name="user-usecase" />
+        <module name="auth" />
+        <module name="account" />
+        <module name="transaction-gateway" />
+        <module name="transaction-usecase" />
+        <module name="user-domain" />
+        <module name="transaction-domain" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway" target="1.8" />
+      <module name="transaction-domain" target="1.8" />
+      <module name="usecase" target="1.8" />
+      <module name="user-gateway" target="1.8" />
+      <module name="user-usecase" target="1.8" />
+      <module name="user-web" target="1.8" />
+      <module name="web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
+      <module name="auth" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="spring-app" options="-parameters" />
+      <module name="transaction" options="-parameters" />
+      <module name="transaction-domain" options="-parameters" />
+      <module name="transaction-gateway" options="-parameters" />
+      <module name="transaction-usecase" options="-parameters" />
+      <module name="usecase" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="user-domain" options="-parameters" />
+      <module name="user-gateway" options="-parameters" />
+      <module name="user-usecase" options="-parameters" />
+      <module name="user-web" options="-parameters" />
+      <module name="web" options="-parameters" />
+    </option>
+  </component>
+</project>
