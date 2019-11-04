@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/modules/transaction/transaction-domain/transaction-domain.iml" filepath="$PROJECT_DIR$/modules/transaction/transaction-domain/transaction-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/user/user-gateway/user-gateway.iml" filepath="$PROJECT_DIR$/modules/user/user-gateway/user-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/user/user-usecase/user-usecase.iml" filepath="$PROJECT_DIR$/modules/user/user-usecase/user-usecase.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/user/user-web/user-web.iml" filepath="$PROJECT_DIR$/modules/user/user-web/user-web.iml" />

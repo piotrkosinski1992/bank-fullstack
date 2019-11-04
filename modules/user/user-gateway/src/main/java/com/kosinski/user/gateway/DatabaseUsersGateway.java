@@ -1,5 +1,6 @@
 package com.kosinski.user.gateway;
 
+import com.kosinski.user.domain.Email;
 import com.kosinski.user.domain.User;
 import com.kosinski.user.usecase.gateways.UsersCommandGateway;
 import com.kosinski.user.usecase.gateways.UsersQueryGateway;
@@ -20,10 +21,10 @@ public class DatabaseUsersGateway implements UsersCommandGateway, UsersQueryGate
     public Optional<User> loadByUsername(String username) {
         return userRepository.findByUsername(username);
     }
-
+    
     @Override
-    public Optional<User> loadByAccountNumber(int number) {
-        return userRepository.findByAccountNumber(number);
+    public Optional<User> loadByEmail(Email email) {
+        return userRepository.findByEmailValue(email.getValue());
     }
 
     @Override

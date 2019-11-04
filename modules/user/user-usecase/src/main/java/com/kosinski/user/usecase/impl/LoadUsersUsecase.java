@@ -19,9 +19,4 @@ public class LoadUsersUsecase implements LoadUsers {
     public User loadByUsername(String username) {
         return usersQueryGateway.loadByUsername(username).orElseThrow(() -> new UsernameNotFound(username));
     }
-
-    @Override
-    public User loadByAccountNumber(int accNumber) {
-        return usersQueryGateway.loadByAccountNumber(accNumber).orElseThrow(() -> new AccountNumberNotFound(accNumber));
-    }
 }

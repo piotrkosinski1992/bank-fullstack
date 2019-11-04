@@ -7,13 +7,13 @@ import javax.persistence.Entity;
 public class BaseEntity {
 
     @EmbeddedId
-    private EntityId id;
+    private UserId id;
     private String username;
     private String password;
     private Role role = Role.USER;
 
     public BaseEntity() {
-        id = EntityId.create();
+        id = UserId.create();
     }
 
     public String getUsername() {
@@ -28,7 +28,7 @@ public class BaseEntity {
         return role;
     }
 
-    public EntityId getId() {
+    public UserId getId() {
         return id;
     }
 

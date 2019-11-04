@@ -17,9 +17,8 @@
     <modules>
         <module>modules/user</module>
         <module>modules/spring-app</module>
-        <module>modules/transaction</module>
-        <module>modules/auth</module>
         <module>modules/account</module>
+        <module>modules/auth</module>
     </modules>
     <packaging>pom</packaging>
 
