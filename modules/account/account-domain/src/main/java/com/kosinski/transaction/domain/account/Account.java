@@ -23,7 +23,7 @@ public class Account
 {
     @EmbeddedId
     private AccountNumber number;
-    private Money balance = Money.create(Currency.PLN, BigDecimal.valueOf(1000L));
+    private Money balance;
     @Embedded
     private UserId userId;
     @OneToMany(
@@ -35,6 +35,8 @@ public class Account
     private Account(UUID userId)
     {
         this.userId = UserId.create(userId);
+        this.balance = Money.create(Currency.PLN, BigDecimal.valueOf(1000L));
+        this.number = AccountNumber.create();
     }
 
     private Account()
