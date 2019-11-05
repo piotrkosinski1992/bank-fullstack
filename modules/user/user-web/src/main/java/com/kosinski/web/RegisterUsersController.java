@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping(value = "/users")
 public class RegisterUsersController {
@@ -21,7 +23,7 @@ public class RegisterUsersController {
     }
 
     @PostMapping("/register")
-    public void register(@RequestBody UserCommandDTO userCommandDTO) {
+    public void register(@RequestBody @Valid UserCommandDTO userCommandDTO) {
         registerUsers.register(userMapper.toEntity(userCommandDTO));
     }
 }

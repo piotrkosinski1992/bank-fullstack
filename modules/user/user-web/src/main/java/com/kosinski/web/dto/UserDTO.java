@@ -6,12 +6,12 @@ import javax.validation.constraints.NotNull;
 
 public abstract class UserDTO {
 
-    @NotNull
-    @NotEmpty
+    @NotNull(message = "username can't be null")
+    @NotEmpty(message = "username can't be empty")
     private String username;
 
-    @NotNull
-    @NotEmpty
+    @NotNull(message = "email can't be null")
+    @NotEmpty(message = "email can't be empty")
     private String email;
 
     private String role;

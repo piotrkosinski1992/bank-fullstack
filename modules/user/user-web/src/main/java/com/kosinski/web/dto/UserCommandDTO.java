@@ -5,8 +5,8 @@ import javax.validation.constraints.NotNull;
 
 public class UserCommandDTO extends UserDTO {
 
-    @NotNull
-    @NotEmpty
+    @NotNull(message = "password can't be null")
+    @NotEmpty(message = "password can't be empty")
     private String password;
 
     public String getPassword() {
