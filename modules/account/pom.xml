@@ -16,6 +16,7 @@
         <module>account-domain</module>
         <module>account-gateway</module>
         <module>account-usecase</module>
+        <module>account-web</module>
     </modules>
 
     <dependencies>

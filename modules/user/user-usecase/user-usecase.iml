@@ -13,5 +13,6 @@
     <orderEntry type="module" module-name="account-usecase" />
     <orderEntry type="module" module-name="user-domain" />
     <orderEntry type="module" module-name="account-domain" />
+    <orderEntry type="module" module-name="events" />
   </component>
 </module>

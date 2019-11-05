@@ -1,0 +1,14 @@
+com\kosinski\user\domain\UserBuilderInterfaces.class
+com\kosinski\user\domain\NotEnoughFunds.class
+com\kosinski\user\domain\BaseEntity.class
+com\kosinski\user\domain\Role.class
+com\kosinski\user\domain\UserBuilderInterfaces$EmailBuilderInterface.class
+com\kosinski\user\domain\Money.class
+com\kosinski\user\domain\Email.class
+com\kosinski\user\domain\UserBuilderInterfaces$PasswordBuilderInterface.class
+com\kosinski\user\domain\UserBuilder.class
+com\kosinski\user\domain\UserBuilderInterfaces$RoleBuilderInterface.class
+com\kosinski\user\domain\UserBuilderInterfaces$UsernameBuilderInterface.class
+com\kosinski\user\domain\UserId.class
+com\kosinski\user\domain\InvalidEmail.class
+com\kosinski\user\domain\User.class

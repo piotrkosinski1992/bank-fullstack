@@ -19,6 +19,7 @@
         <module>modules/spring-app</module>
         <module>modules/account</module>
         <module>modules/auth</module>
+        <module>modules/events</module>
     </modules>
     <packaging>pom</packaging>
 

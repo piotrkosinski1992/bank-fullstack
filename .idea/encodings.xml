@@ -3,11 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/account" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/modules/account" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/account/account-domain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/account/account-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/account/account-usecase" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/account/account-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/events" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/spring-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/user/user-domain" charset="UTF-8" />
