@@ -65,6 +65,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         "/**/*.js"
                 ).permitAll()
                 .antMatchers("/h2-console/**").permitAll()
+                .antMatchers("/health/**").permitAll()
+                .antMatchers("/info/**").permitAll()
+                .antMatchers("/actuator/mappings/**").permitAll()
                 .antMatchers(HttpMethod.POST, "/users/register/**").permitAll()
                 .antMatchers(HttpMethod.POST, "/auth/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/pets/**").hasAnyRole("PET_OWNER", "DOCTOR")

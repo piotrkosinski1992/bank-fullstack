@@ -1,15 +1,14 @@
 package com.kosinski.transaction.domain.transaction;
 
-import com.kosinski.transaction.domain.Currency;
 import com.kosinski.transaction.domain.Money;
-
-import java.math.BigDecimal;
+import com.kosinski.transaction.domain.account.AccountNumber;
 
 public class TransactionBuilder implements
         TransactionBuilderInterfaces.AmountBuilderInterface,
         TransactionBuilderInterfaces.TransactionMethodBuilderInterface,
         TransactionBuilderInterfaces.FromBuilderInterface,
-        TransactionBuilderInterfaces.ToBuilderInterface {
+        TransactionBuilderInterfaces.ToBuilderInterface,
+        TransactionBuilderInterfaces.CurrentBalanceBuilderInterface{
     private Transaction transaction;
 
 
@@ -18,8 +17,8 @@ public class TransactionBuilder implements
     }
 
     @Override
-    public TransactionBuilderInterfaces.TransactionMethodBuilderInterface setAmount(Currency currency, BigDecimal amount) {
-        transaction.setAmount(Money.create(currency, amount));
+    public TransactionBuilderInterfaces.TransactionMethodBuilderInterface setAmount(Money amount) {
+        transaction.setAmount(amount);
         return this;
     }
 
@@ -27,19 +26,24 @@ public class TransactionBuilder implements
     public TransactionBuilderInterfaces.FromBuilderInterface setMethod(TransactionMethod method) {
         transaction.setMethod(method);
         return this;
-
     }
 
     @Override
-    public TransactionBuilderInterfaces.ToBuilderInterface setFrom(Long from) {
+    public TransactionBuilderInterfaces.ToBuilderInterface setFrom(AccountNumber from) {
         transaction.setFrom(from);
         return this;
 
     }
 
     @Override
-    public Transaction setTo(Long to) {
+    public TransactionBuilderInterfaces.CurrentBalanceBuilderInterface setTo(AccountNumber to) {
         transaction.setTo(to);
+        return this;
+    }
+
+    @Override
+    public Transaction setCurrentBalance(Money currentBalance) {
+        transaction.setCurrentBalance(currentBalance);
         return transaction;
     }
 }

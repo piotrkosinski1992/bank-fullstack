@@ -2,6 +2,8 @@ package com.kosinski.transaction.web;
 
 import java.util.Arrays;
 
+import com.kosinski.transaction.domain.Money;
+import com.kosinski.transaction.domain.account.AccountNumber;
 import org.springframework.stereotype.Component;
 
 import com.kosinski.transaction.domain.Currency;
@@ -16,10 +18,15 @@ class TransactionMapper
     Transaction toEntity(TransactionCommandDTO dto)
     {
         return Transaction.create()
-                .setAmount(convertToCurrency(dto.getCurrency()), dto.getAmount())
+                .setAmount(Money.create(convertToCurrency(dto.getCurrency()), dto.getAmount()))
                 .setMethod(convertToTransactionMethod(dto.getMethod()))
-                .setFrom(dto.getFrom())
-                .setTo(dto.getTo());
+                .setFrom(null)
+                .setTo(convertToAccountNumber(dto.getTo()))
+                .setCurrentBalance(null); //TODO zrobic jako optional parameter
+    }
+
+    private AccountNumber convertToAccountNumber(Long to) {
+        return AccountNumber.create(to);
     }
 
     private TransactionMethod convertToTransactionMethod(String method)

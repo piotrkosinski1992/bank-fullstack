@@ -4,7 +4,6 @@ import com.kosinski.user.domain.BaseEntity;
 import com.kosinski.user.usecase.LoadBaseEntity;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,7 +15,7 @@ public class UserPrincipalDetailsService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) {
         BaseEntity baseEntity = this.loadBaseEntity.loadByUsername(username);
         return new UserPrincipal(baseEntity);
     }

@@ -18,12 +18,20 @@ public class AccountNumber implements Serializable {
         this.value = generateId();
     }
 
+    private AccountNumber(Long number) {
+        this.value = number;
+    }
+
     private Long generateId() {
         return ThreadLocalRandom.current().nextLong(MIN_ACC_NUM, MAX_ACC_NUM);
     }
 
     public static AccountNumber create() {
         return new AccountNumber();
+    }
+
+    public static AccountNumber create(Long number) {
+        return new AccountNumber(number);
     }
 
     public Long getValue() {

@@ -1,10 +1,7 @@
 package com.kosinski.transaction.domain.account;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
@@ -16,6 +13,7 @@ import com.kosinski.transaction.domain.Currency;
 import com.kosinski.transaction.domain.Money;
 import com.kosinski.transaction.domain.exceptions.CurrencyMismatch;
 import com.kosinski.transaction.domain.transaction.Transaction;
+import com.kosinski.user.domain.NotEnoughFunds;
 import com.kosinski.user.domain.UserId;
 
 @Entity
@@ -58,7 +56,15 @@ public class Account
         return number;
     }
 
-    void withdraw(Money amount)
+    public void addTransaction(Transaction transaction) {
+        transactions.add(transaction);
+    }
+
+    public List<Transaction> getTransactions() {
+        return Collections.unmodifiableList(transactions);
+    }
+
+    public void withdraw(Money amount)
     {
         if (amount.getCurrency() != balance.getCurrency())
         {
@@ -67,7 +73,7 @@ public class Account
         this.balance = balance.subtract(amount);
     }
 
-    void deposit(Money amount)
+    public void deposit(Money amount)
     {
         this.balance = balance.add(amount);
     }
@@ -91,5 +97,14 @@ public class Account
     public int hashCode()
     {
         return Objects.hash(number);
+    }
+
+    public void verifyWithdrawalPossibility(Money amount) {
+        if(!amount.getCurrency().equals(balance.getCurrency())) {
+            throw new CurrencyMismatch(amount.getCurrency(), balance.getCurrency());
+        }
+        if(amount.getAmount().compareTo(balance.getAmount()) > 0) {
+            throw new NotEnoughFunds(number.getValue());
+        }
     }
 }

@@ -2,19 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="636a4fa4-ac56-4160-9560-7af5c01638a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/commons/RestControllerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/LoadAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/gateway/AccountQueryGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/AccountNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/LoadAccountsUsecase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/account/account-domain/account-domain.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/account/account-gateway/account-gateway.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/account/account-usecase/account-usecase.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/account/account-web/account-web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/auth/auth.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/events/events.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/spring-app/spring-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/RegisterUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/RegisterUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserCommandDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserCommandDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/AccountNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/AccountNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilderInterfaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilderInterfaces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-usecase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-usecase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/SaveTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/PerformTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/SaveTransactionUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/PerformTransactionUsecase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/UserPrincipalDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/UserPrincipalDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/events/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/events/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/spring-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spring-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/spring-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/spring-app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/NotEnoughFunds.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/NotEnoughFunds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-usecase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-usecase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UserNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UserNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UsernameNotFound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadBaseEntityUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadBaseEntityUsecase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadUsersUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadUsersUsecase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/user-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/user-web/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/modules/user/user-gateway/target/" />
@@ -37,108 +57,139 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/commons/RestControllerExceptionHandler.java">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/PerformTransactionUsecase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="227">
+              <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#991#992#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/context/support/DefaultMessageSourceResolvable.class">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+            <state relative-caret-position="288">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding>
-                <element signature="e#1956#1957#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserCommandDTO.java">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-sources.jar!/org/hibernate/validator/internal/engine/ConstraintViolationImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar!/javax/validation/Path.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/validation/ObjectError.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/validation/Errors.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE.jar!/org/springframework/web/bind/MethodArgumentNotValidException.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="105">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1256#1257#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilderInterfaces.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="e#1235#1236#0" expanded="true" />
+                <element signature="e#1265#1266#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/NotEnoughFunds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/AccountNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+              <folding>
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/Money.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -157,10 +208,22 @@
     <findStrings>
       <find>&gt;account-domain</find>
       <find>@Embe</find>
-      <find>void main</find>
       <find>@Event</find>
       <find>field</find>
       <find>@Ad</find>
+      <find>@Rest</find>
+      <find>UsernameNotFound</find>
+      <find>User</find>
+      <find>UsernameNot</find>
+      <find>setFro</find>
+      <find>JpaRepository</find>
+      <find>void main</find>
+      <find>account-we</find>
+      <find>register</find>
+      <find>TransactionType</find>
+      <find>COnfigurerAd</find>
+      <find>&lt;version&gt;</find>
+      <find>balance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,31 +233,54 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/modules/account/pom.xml" />
-        <option value="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java" />
-        <option value="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java" />
-        <option value="$PROJECT_DIR$/modules/account/account-web/pom.xml" />
         <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/SaveTransactionUsecase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/RegisterUsersUsecase.java" />
         <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/CreateAccount.java" />
         <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/events/UseRegisteredEventListener.java" />
         <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/gateway/AccountCommandGateway.java" />
-        <option value="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/AccountRepository.java" />
-        <option value="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java" />
         <option value="$PROJECT_DIR$/modules/events/src/main/java/com/kosinski/events/UserRegisteredEvent.java" />
         <option value="$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/UserId.java" />
         <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/CreateAccountUsecase.java" />
-        <option value="$PROJECT_DIR$/modules/spring-app/pom.xml" />
-        <option value="$PROJECT_DIR$/modules/spring-app/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/modules/user/user-usecase/pom.xml" />
-        <option value="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java" />
-        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/Email.java" />
         <option value="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/RegisterUsersController.java" />
         <option value="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserCommandDTO.java" />
         <option value="$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/commons/RestControllerExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/AccountNotFound.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/PerformTransaction.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/LoadAccounts.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/gateway/AccountQueryGateway.java" />
+        <option value="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UsernameNotFound.java" />
+        <option value="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UserNotFound.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/LoadAccountsUsecase.java" />
+        <option value="$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/UserPrincipalDetailsService.java" />
+        <option value="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadBaseEntityUsecase.java" />
+        <option value="$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadUsersUsecase.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/AccountNumber.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/AccountRepository.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java" />
+        <option value="$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/Main.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java" />
+        <option value="$PROJECT_DIR$/modules/spring-app/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/modules/auth/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/account/account-web/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/events/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/user/user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/user/user-usecase/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/spring-app/pom.xml" />
+        <option value="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/Money.java" />
+        <option value="$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/NotEnoughFunds.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/Transaction.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilderInterfaces.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilder.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/PerformTransactionUsecase.java" />
+        <option value="$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java" />
       </list>
     </option>
   </component>
@@ -220,7 +306,9 @@
     <option name="width" value="1550" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -237,6 +325,262 @@
               <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
               <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-usecase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usecase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
@@ -278,6 +622,83 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kosinski" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-usecase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usecase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usecase" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bank-fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank-fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="user-web" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -301,11 +722,14 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kosinski.transaction.usecase.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -351,18 +775,26 @@
       <option name="presentableId" value="Default" />
       <updated>1572967322495</updated>
       <workItem from="1572967325392" duration="3687000" />
-      <workItem from="1572974202554" duration="4343000" />
+      <workItem from="1572974202554" duration="13913000" />
     </task>
+    <task id="LOCAL-00001" summary="ControllerAdvice to handle exception plus handler to catch javax.validation exceptions">
+      <created>1572978636279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572978636279</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8030000" />
+    <option name="totallyTimeSpent" value="17600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -372,9 +804,9 @@
       <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22535211" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47778982" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4723727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.1971831" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -383,7 +815,7 @@
       <window_info anchor="bottom" id="Docker" order="9" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -403,32 +835,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ControllerAdvice to handle exception plus handler to catch javax.validation exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="ControllerAdvice to handle exception plus handler to catch javax.validation exceptions" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/events/UseRegisteredEventListener.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/RegisterUsersController.java</url>
           <line>26</line>
           <properties />
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/RegisterUsersUsecase.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/commons/RestControllerExceptionHandler.java</url>
@@ -442,8 +860,25 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/PerformTransactionUsecase.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="fromAccount.number" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -502,332 +937,24 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/gateways/UsersQueryGateway.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-sources.jar!/org/hibernate/validator/internal/engine/ConstraintViolationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="213">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadUsersUsecase.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar!/javax/validation/Path.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="213">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/AccountNumberNotFound.java" />
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/EmailAlreadyUsed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/gateways/UsersCommandGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/gateways/BaseEntityQueryGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Currency.java" />
-    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/AccountRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/UserId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/events/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spring-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spring-app/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/events/src/main/java/com/kosinski/events/UserRegisteredEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/SaveTransactionUsecase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/RegisterUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/gateway/AccountCommandGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/CreateAccountUsecase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/AccountNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/CreateAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="112" column="7" lean-forward="true" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/Email.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/validation/annotation/Validated.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/validation/ObjectError.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/kosinski/user-web/1.0-SNAPSHOT/user-web-1.0-SNAPSHOT.jar!/com/kosinski/web/RegisterUsersController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/kosinski/user-usecase/1.0-SNAPSHOT/user-usecase-1.0-SNAPSHOT.jar!/com/kosinski/user/usecase/impl/RegisterUsersUsecase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/RegisterUsersUsecase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/events/UseRegisteredEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/RegisterUsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/jwt/JwtAuthorizationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE.jar!/org/springframework/validation/BindingResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/validation/Errors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -842,66 +969,394 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar!/javax/validation/Path.java">
+    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-sources.jar!/org/hibernate/validator/internal/engine/ConstraintViolationImpl.java">
+    <entry file="file://$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/controller/AuthenticationRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="278">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/security/Principal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/AccountNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/PerformTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/events/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UsernameNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.6.RELEASE/spring-security-core-5.1.6.RELEASE.jar!/org/springframework/security/core/userdetails/UsernameNotFoundException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/gateway/AccountQueryGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadUsersUsecase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/LoadBaseEntityUsecase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/UserPrincipalDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/exceptions/UserNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/LoadAccountsUsecase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/LoadAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.11.RELEASE/spring-data-commons-2.1.11.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/AccountRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-usecase/src/main/java/com/kosinski/user/usecase/impl/RegisterUsersUsecase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-gateway/src/main/java/com/kosinski/transaction/gateway/DatabaseAccountGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/events/UseRegisteredEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spring-app/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/auth/src/main/java/com/kosinski/auth/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spring-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/validation/ObjectError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/user/user-web/src/main/java/com/kosinski/web/dto/UserCommandDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.10.RELEASE/spring-context-5.1.10.RELEASE.jar!/org/springframework/context/support/DefaultMessageSourceResolvable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="301">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/spring-app/src/main/java/com/kosinski/commons/RestControllerExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/PerformTransactionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/Money.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/AccountNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/user/user-domain/src/main/java/com/kosinski/user/domain/NotEnoughFunds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/account/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-domain/src/main/java/com/kosinski/transaction/domain/transaction/TransactionBuilderInterfaces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionCommandDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-web/src/main/java/com/kosinski/transaction/web/TransactionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/account/account-usecase/src/main/java/com/kosinski/transaction/usecase/impl/PerformTransactionUsecase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>
