@@ -1,0 +1,5 @@
+com\kosinski\transaction\web\TransactionCommandDTO.class
+com\kosinski\transaction\web\PerformTransactionController.class
+com\kosinski\transaction\web\TransactionMapper.class
+com\kosinski\transaction\web\exceptions\InvalidTransactionMethod.class
+com\kosinski\transaction\web\exceptions\UnsupportedCurrency.class

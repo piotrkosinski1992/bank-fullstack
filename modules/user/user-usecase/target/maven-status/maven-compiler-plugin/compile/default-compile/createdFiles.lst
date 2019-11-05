@@ -1,0 +1,12 @@
+com\kosinski\user\usecase\exceptions\UserNotFound.class
+com\kosinski\user\usecase\impl\LoadBaseEntityUsecase.class
+com\kosinski\user\usecase\LoadBaseEntity.class
+com\kosinski\user\usecase\exceptions\EmailAlreadyUsed.class
+com\kosinski\user\usecase\exceptions\UsernameNotFound.class
+com\kosinski\user\usecase\gateways\UsersCommandGateway.class
+com\kosinski\user\usecase\gateways\BaseEntityQueryGateway.class
+com\kosinski\user\usecase\LoadUsers.class
+com\kosinski\user\usecase\RegisterUsers.class
+com\kosinski\user\usecase\gateways\UsersQueryGateway.class
+com\kosinski\user\usecase\impl\LoadUsersUsecase.class
+com\kosinski\user\usecase\impl\RegisterUsersUsecase.class

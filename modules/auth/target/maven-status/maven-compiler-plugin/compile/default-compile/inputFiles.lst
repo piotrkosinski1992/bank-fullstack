@@ -1,0 +1,11 @@
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\UserPrincipalDetailsService.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\controller\JwtAuthenticationRequest.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\controller\JwtAuthenticationResponse.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\WebConfig.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\UserPrincipal.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\jwt\JwtAuthenticationFilter.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\jwt\JwtProperties.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\controller\AuthenticationException.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\jwt\JwtAuthorizationFilter.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\SecurityConfiguration.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\auth\src\main\java\com\kosinski\auth\controller\AuthenticationRestController.java

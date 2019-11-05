@@ -1,0 +1,4 @@
+com\kosinski\user\gateway\BaseEntityRepository.class
+com\kosinski\user\gateway\UserRepository.class
+com\kosinski\user\gateway\DatabaseBaseEntityGateway.class
+com\kosinski\user\gateway\DatabaseUsersGateway.class

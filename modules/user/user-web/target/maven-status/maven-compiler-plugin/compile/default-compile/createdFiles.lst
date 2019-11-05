@@ -1,0 +1,7 @@
+com\kosinski\web\dto\RoleNotFound.class
+com\kosinski\web\dto\UserCommandDTO.class
+com\kosinski\web\RegisterUsersController.class
+com\kosinski\web\dto\UserMapper.class
+com\kosinski\web\dto\UserDTO.class
+com\kosinski\web\dto\UserQueryDTO.class
+com\kosinski\web\LoadUsersController.class

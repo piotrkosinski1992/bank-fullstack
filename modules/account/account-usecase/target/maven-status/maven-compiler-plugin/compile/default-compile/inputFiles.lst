@@ -1,0 +1,8 @@
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\gateway\TransactionCommandGateway.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\CreateAccount.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\gateway\TransactionQueryGateway.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\impl\SaveTransactionUsecase.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\events\UseRegisteredEventListener.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\SaveTransaction.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\gateway\AccountCommandGateway.java
+C:\Users\pkosinski\IdeaProjects\bank\bank-fullstack\modules\account\account-usecase\src\main\java\com\kosinski\transaction\usecase\impl\CreateAccountUsecase.java

@@ -11,8 +11,10 @@ import com.kosinski.transaction.web.exceptions.InvalidTransactionMethod;
 import com.kosinski.transaction.web.exceptions.UnsupportedCurrency;
 
 @Component
-class TransactionMapper {
-    Transaction toEntity(TransactionCommandDTO dto) {
+class TransactionMapper
+{
+    Transaction toEntity(TransactionCommandDTO dto)
+    {
         return Transaction.create()
                 .setAmount(convertToCurrency(dto.getCurrency()), dto.getAmount())
                 .setMethod(convertToTransactionMethod(dto.getMethod()))
@@ -20,14 +22,16 @@ class TransactionMapper {
                 .setTo(dto.getTo());
     }
 
-    private TransactionMethod convertToTransactionMethod(String method) {
+    private TransactionMethod convertToTransactionMethod(String method)
+    {
         return Arrays.stream(TransactionMethod.values())
                 .filter(tm -> tm.name().equals(method))
                 .findFirst()
                 .orElseThrow(() -> new InvalidTransactionMethod(method));
     }
 
-    private Currency convertToCurrency(String currency) {
+    private Currency convertToCurrency(String currency)
+    {
         return Arrays.stream(Currency.values())
                 .filter(c -> c.name().equals(currency))
                 .findFirst()
