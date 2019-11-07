@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface BaseEntityRepository extends JpaRepository<BaseEntity, UserId> {
-    Optional<BaseEntity> findByUsername(String username);
+    Optional<BaseEntity> findByEmailValue(String email);
 }

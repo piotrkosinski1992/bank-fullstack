@@ -38,7 +38,7 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public String getUsername() {
-        return this.baseEntity.getUsername();
+        return this.baseEntity.getEmail().getValue();
     }
 
     @Override

@@ -6,6 +6,7 @@ import com.kosinski.transaction.domain.transaction.Transaction;
 import com.kosinski.transaction.usecase.LoadAccounts;
 import com.kosinski.transaction.usecase.PerformTransaction;
 import com.kosinski.transaction.usecase.gateway.TransactionCommandGateway;
+import com.kosinski.user.domain.Email;
 import com.kosinski.user.domain.UserId;
 import com.kosinski.user.usecase.LoadUsers;
 import org.springframework.stereotype.Service;
@@ -26,8 +27,8 @@ public class PerformTransactionUsecase implements PerformTransaction {
 
     @Transactional
     @Override
-    public void save(Transaction transaction, String username) {
-        Account fromAccount = getUserAccount(username);
+    public void save(Transaction transaction, Email email) {
+        Account fromAccount = getUserAccount(email);
         Account toAccount = loadAccounts.loadByAccountNumber(transaction.getTo());
 
         fromAccount.verifyWithdrawalPossibility(transaction.getAmount());
@@ -39,7 +40,6 @@ public class PerformTransactionUsecase implements PerformTransaction {
         toAccount.addTransaction(prepareTransaction(transaction, toAccount));
     }
 
-
     private Transaction prepareTransaction(Transaction transaction, Account account) {
         return Transaction.create()
                 .setAmount(transaction.getAmount())
@@ -49,8 +49,8 @@ public class PerformTransactionUsecase implements PerformTransaction {
                 .setCurrentBalance(account.getBalance());
     }
 
-    private Account getUserAccount(String username) {
-        UserId userId = loadUsers.loadByUsername(username).getId();
+    private Account getUserAccount(Email email) {
+        UserId userId = loadUsers.loadByEmail(email).getId();
         return loadAccounts.loadByUserId(userId);
     }
 }

@@ -18,11 +18,6 @@ public class DatabaseUsersGateway implements UsersCommandGateway, UsersQueryGate
     }
 
     @Override
-    public Optional<User> loadByUsername(String username) {
-        return userRepository.findByUsername(username);
-    }
-    
-    @Override
     public Optional<User> loadByEmail(Email email) {
         return userRepository.findByEmailValue(email.getValue());
     }

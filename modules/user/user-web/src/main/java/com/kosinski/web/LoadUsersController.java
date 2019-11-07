@@ -1,6 +1,6 @@
 package com.kosinski.web;
 
-
+import com.kosinski.user.domain.Email;
 import com.kosinski.user.domain.User;
 import com.kosinski.user.usecase.LoadUsers;
 import com.kosinski.web.dto.UserMapper;
@@ -22,9 +22,9 @@ public class LoadUsersController {
         this.userMapper = userMapper;
     }
 
-    @GetMapping("/{username}")
-    public UserQueryDTO getByUsername(@PathVariable String username) {
-        User user = loadUsers.loadByUsername(username);
+    @GetMapping("/{email}")
+    public UserQueryDTO getByUsername(@PathVariable String email) {
+        User user = loadUsers.loadByEmail(Email.create(email));
         return userMapper.toDTO(user);
     }
 }

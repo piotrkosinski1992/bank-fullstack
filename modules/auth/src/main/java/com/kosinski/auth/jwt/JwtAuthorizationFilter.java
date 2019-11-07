@@ -3,6 +3,7 @@ package com.kosinski.auth.jwt;
 import com.auth0.jwt.JWT;
 import com.kosinski.auth.UserPrincipal;
 import com.kosinski.user.domain.BaseEntity;
+import com.kosinski.user.domain.Email;
 import com.kosinski.user.usecase.LoadBaseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -61,7 +62,7 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
         // Search in the DB if we find the user by token subject (username)
         // If so, then grab user details and create spring auth token using username, pass, authorities/roles
         if (userName != null) {
-            BaseEntity baseEntity = loadBaseEntity.loadByUsername(userName);
+            BaseEntity baseEntity = loadBaseEntity.loadByEmail(Email.create(userName));
             UserPrincipal principal = new UserPrincipal(baseEntity);
 
             UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(userName, null, principal.getAuthorities());

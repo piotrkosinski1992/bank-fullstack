@@ -1,28 +1,9 @@
 package com.kosinski.web.dto;
 
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
 public abstract class UserDTO {
 
-    @NotNull(message = "username can't be null")
-    @NotEmpty(message = "username can't be empty")
-    private String username;
-
-    @NotNull(message = "email can't be null")
-    @NotEmpty(message = "email can't be empty")
-    private String email;
-
     private String role;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getRole() {
         return role;
@@ -32,11 +13,4 @@ public abstract class UserDTO {
         this.role = role;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }

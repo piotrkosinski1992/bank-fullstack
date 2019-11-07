@@ -6,7 +6,5 @@ import com.kosinski.user.domain.User;
 import java.util.Optional;
 
 public interface UsersQueryGateway {
-    Optional<User> loadByUsername(String username);
-
     Optional<User> loadByEmail(Email email);
 }

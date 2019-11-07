@@ -7,11 +7,7 @@ class UserBuilderInterfaces {
     }
 
     public interface EmailBuilderInterface {
-        UsernameBuilderInterface withEmail(Email email);
-    }
-
-    public interface UsernameBuilderInterface {
-        PasswordBuilderInterface withUsername(String username);
+        PasswordBuilderInterface withEmail(Email email);
     }
 
     public interface PasswordBuilderInterface {

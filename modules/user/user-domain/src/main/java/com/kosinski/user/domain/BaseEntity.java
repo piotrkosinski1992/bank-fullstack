@@ -1,5 +1,6 @@
 package com.kosinski.user.domain;
 
+import javax.persistence.Embedded;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
@@ -8,7 +9,8 @@ public class BaseEntity {
 
     @EmbeddedId
     private UserId id;
-    private String username;
+    @Embedded
+    private Email email;
     private String password;
     private Role role = Role.USER;
 
@@ -16,28 +18,32 @@ public class BaseEntity {
         id = UserId.create();
     }
 
-    public String getUsername() {
-        return username;
+    public UserId getId() {
+        return id;
+    }
+
+    public void setId(UserId id) {
+        this.id = id;
+    }
+
+    public Email getEmail() {
+        return email;
+    }
+
+    public void setEmail(Email email) {
+        this.email = email;
     }
 
     public String getPassword() {
         return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Role getRole() {
         return role;
-    }
-
-    public UserId getId() {
-        return id;
-    }
-
-    void setUsername(String username) {
-        this.username = username;
-    }
-
-    void setPassword(String password) {
-        this.password = password;
     }
 
     void setRole(Role role) {

@@ -1,6 +1,7 @@
 package com.kosinski.transaction.web;
 
 import com.kosinski.transaction.usecase.PerformTransaction;
+import com.kosinski.user.domain.Email;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,6 @@ public class PerformTransactionController {
 
     @PostMapping("/transfer")
     public void transfer(@RequestBody TransactionCommandDTO transactionCommandDTO, Principal principal) {
-        performTransactionUsecase.save(transactionMapper.toEntity(transactionCommandDTO), principal.getName());
+        performTransactionUsecase.save(transactionMapper.toEntity(transactionCommandDTO), Email.create(principal.getName()));
     }
 }

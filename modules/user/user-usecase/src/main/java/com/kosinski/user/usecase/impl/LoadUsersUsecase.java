@@ -1,5 +1,6 @@
 package com.kosinski.user.usecase.impl;
 
+import com.kosinski.user.domain.Email;
 import com.kosinski.user.domain.User;
 import com.kosinski.user.usecase.LoadUsers;
 import com.kosinski.user.usecase.exceptions.UserNotFound;
@@ -16,7 +17,7 @@ public class LoadUsersUsecase implements LoadUsers {
     }
 
     @Override
-    public User loadByUsername(String username) {
-        return usersQueryGateway.loadByUsername(username).orElseThrow(() -> new UserNotFound(username));
+    public User loadByEmail(Email email) {
+        return usersQueryGateway.loadByEmail(email).orElseThrow(() -> new UserNotFound(email.getValue()));
     }
 }

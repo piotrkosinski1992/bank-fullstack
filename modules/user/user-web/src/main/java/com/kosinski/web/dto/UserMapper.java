@@ -21,7 +21,6 @@ public class UserMapper {
         return User.create()
                 .withRole(userCommandDTO.getRole() != null ? mapRole(userCommandDTO.getRole()) : null)
                 .withEmail(Email.create(userCommandDTO.getEmail()))
-                .withUsername(userCommandDTO.getUsername())
                 .withPassword(encoder.encode(userCommandDTO.getPassword()));
 
     }
@@ -35,9 +34,9 @@ public class UserMapper {
 
     public UserQueryDTO toDTO(User user) {
         UserQueryDTO queryDTO = new UserQueryDTO();
-        queryDTO.setUsername(user.getUsername());
+/*        queryDTO.setUsername(user.getUsername());
         queryDTO.setRole(user.getRole().name());
-        queryDTO.setEmail(user.getEmail().getValue());
+        queryDTO.setEmail(user.getEmail().getValue());*/
         return queryDTO;
     }
 }
